@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+	<link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/fontawesome-stars-o.css">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<!-- Reg. modal -->
+	<div class="modal fade bs-modal-sm-reg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="gridSystemModalLabel">Registration</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="regname" class="control-label">Username</label>
+							<input type="email" class="form-control" id="regname" placeholder="Username">
+						</div>
+						<div class="form-group">
+							<label for="regpw" class="control-label">Password</label>
+							<input type="password" class="form-control" id="regpw" placeholder="Password">
+						</div>
+					</form>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-success btn-lg btn-block" id="reg">Register Me!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Log. modal -->
+	<div class="modal fade bs-modal-sm-log" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="gridSystemModalLabel">Sign in to your account</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="logname" class="control-label">Username</label>
+							<input type="email" class="form-control" id="logname" placeholder="Username">
+						</div>
+						<div class="form-group">
+							<label for="logpw" class="control-label">Password</label>
+							<input type="password" class="form-control" id="logpw" placeholder="Password">
+						</div>
+					</form>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-success btn-lg btn-block" id="log">Sign In</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Item nav, navbar -->
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#" class="home">Test</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#" class="home">Home<span class="sr-only">(current)</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target=".bs-modal-sm-reg">Registration</a></li>
+						<li><a href="#" data-toggle="modal" data-target=".bs-modal-sm-log">Sign in to your account</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-2">
+				<ul class="nav nav-pills nav-stacked" id="renderList">
+					<!--item nav. here-->
+				</ul>
+			</div>
+			<div class="col-xs-10 row" id="renderHere">
+				<!--main content here-->
+			</div>
+
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="scripts/script.js"></script>
+	<script src="styles/bootstrap/js/bootstrap.min.js"></script>
+	<script src="scripts/jquery.barrating.min.js"></script>
+
+</body>
+
+</html>
